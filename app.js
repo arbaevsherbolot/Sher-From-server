@@ -5,13 +5,11 @@ const app = express();
 
 const cors = require("cors");
 
-const bodyParser = require("body-parser");
 const routerHandler = require("./routes/handler");
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 app.use(cors());
 app.use("/", routerHandler);
+app.use(express.json());
 
 const PORT = process.env.PORT || 2006;
 
