@@ -22,7 +22,7 @@ router.get("/replay", (req, res) => {
   const username = `${getUserData.users[userIndex].userName}`;
   const email = `${getUserData.users[userIndex].userEmail}`;
   const phone = `${getUserData.users[userIndex].userPhone}`;
-  const message = "The data is correct!";
+  const message = "The application is still under development, it is only being tested";
 
   const userValid = () => {
     if (username === "Sherbolot Arbaev") {
