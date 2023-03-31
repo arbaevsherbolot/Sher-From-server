@@ -33,9 +33,9 @@ router.get("/replay", (req, res) => {
   };
 
   res.json({
-    user: `Welcome ${userValid()}`,
-    email: `Email: ${email}`,
-    phone: `Phone: ${phone}`,
+    // user: `Welcome ${userValid()}`,
+    // email: `Email: ${email}`,
+    // phone: `Phone: ${phone}`,
     message: `${message}`,
   });
 });
